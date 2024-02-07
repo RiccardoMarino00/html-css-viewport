@@ -28,16 +28,47 @@ a{
     display: flex;
 }
 
+.container-main{
+    display: flex;
+}
+
+.sidebar{
+    height: 100vh;
+}
+
+.row, .sidebar{
+    /* flex-direction: column; */
+}
+
+.debug .sidebar{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.debug .content{
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.debug .footer{
+    border: 1px solid blue;
+    padding: 20px;
+}
+
 
                                               /* HEADER */
 
 
-.header-app{
+/* .header-app{
     display: flex;
     background-color: black;
     color: white;
     height: 100vh;
     
+}
+
+.row, .sidebar{
+    display: inline-block;
 }
 
 .header-app nav{
@@ -99,7 +130,7 @@ main{
 
 .list-item{
     margin-top: 7px;
-}
+} */
 
 
 
