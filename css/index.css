@@ -6,132 +6,118 @@
     box-sizing: border-box;
 }
 
-/* menu,
-ol,
-ul{
-    list-style: none;
-} */
-
-img{
-    width: 100%;
+#app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-a{
-    text-decoration: none;
-    color: currentColor;
+.app-body{
+display: flex;
+flex-grow: 1;
 }
 
-                                              /* LAYOUT */
+.app-menu{
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: firebrick;
+}
+
+.list-header{
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.item-header{
+    padding: 5px;
+}
+
+.banner{
+    display: flex;
+    justify-content: flex-end;
+    background-color: blue;
+}
+
+button{
+    line-height: 30px;
+    border-radius: 999px;
+    border: none;
+    margin: 20px;
+    padding: 5px;
+}
 
 .row{
+    display: flex;
     flex-wrap: wrap;
-    display: flex;
-}
-
-.container-main{
-    display: flex;
-}
-
-.sidebar{
-    height: 100vh;
-}
-
-.row, .sidebar{
-    /* flex-direction: column; */
-}
-
-.debug .sidebar{
-    border: 1px solid black;
-    padding: 20px;
-}
-
-.debug .content{
-    border: 1px solid red;
-    padding: 20px;
-}
-
-.debug .footer{
-    border: 1px solid blue;
-    padding: 20px;
-}
-
-
-                                              /* HEADER */
-
-
-/* .header-app{
-    display: flex;
-    background-color: black;
-    color: white;
-    height: 100vh;
-    
-}
-
-.row, .sidebar{
-    display: inline-block;
-}
-
-.header-app nav{
-    background-color: gray;
-    padding: 20px;
-    width: 150px;
-    flex-shrink: 0;
-}
-  
-
-
-main{
-    flex-grow: 1;
-    background-color: lightcoral;
-    height: 100vh;
-}
-
-.main-header{
-    background-color: navy;
-    width: 100%;
-    height: 90px;
-    position: relative;
-}
-
-.abbonati{
-    border: none;
-    border-radius: 30px;
-    height: 40px;
-    width: 90px;
-    position: absolute;
-    right: 10px;
-    top: 28px;
-}
-
-.col-title{
-    width: 100%;
-    padding: 20px;
-
 }
 
 .col-7{
     width: 25%;
-    padding: 20px;
+    padding: 10px;
 }
 
-.title-paragraph{
+.section-2, .section-1{
     margin: 20px;
-    margin-top: 50px;
 }
 
-.paragraph{
-   margin-top: 20px;
+.lorem{
+    margin-top: 20px;
+    margin-left: 5px;
 }
 
-.list{
+.list-main{
     margin-top: 20px;
     margin-left: 20px;
 }
 
-.list-item{
-    margin-top: 7px;
-} */
+.app-bottom{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: aquamarine;
+}
 
+.app-bottom ul{
+    display: flex;
+    gap: 20px;
+}
+
+.app-content{
+    flex-grow: 1;
+    background-color: khaki;
+}
+
+
+
+
+
+.debug .app-body{
+    border: 1px solid black;
+    /* padding: 20px; */
+}
+
+.debug .app-menu{
+    border: 1px solid red;
+    /* padding: 20px; */
+
+}
+
+.debug .app-content{
+    border: 1px solid blue;
+    /* padding: 20px; */
+
+}
+
+.debug .app-bottom{
+    border: 1px solid green;
+    /* padding: 20px; */
+
+}
 
 
 
